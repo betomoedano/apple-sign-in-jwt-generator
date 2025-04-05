@@ -14,6 +14,7 @@ import {
 import { StatusBar } from "expo-status-bar";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { SignJWT, importPKCS8 } from "jose";
+import { Link } from "expo-router";
 
 export default function Home() {
   const [keyId, setKeyId] = useState("");
@@ -384,6 +385,14 @@ TN7wseIC6lszNPLCMMJu7QCWCxYa3ZqUTG9f4Vqg04Fe1Db7HHm5BTgrLkFmxMBb
                 codewithbeto.dev
               </Text>
             </Text>
+            <Link
+              style={{ color: "gray", marginTop: 30 }}
+              href="https://expo.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Powered by Expo
+            </Link>
           </View>
         </View>
       </ScrollView>
